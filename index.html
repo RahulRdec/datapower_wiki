@@ -66,8 +66,8 @@
 															<div class="container wow fadeInUp">
 																<div class="section-header">
 																	<!-- <h3 class="section-title">wiki</h3> -->
-																	<p class="section-description">DataPower has SOMA enabled capabilities which have been leveraged here to extract frequently asked  information like certificates getting expired in next 14 days, list of current services in any environment etc.</p>
-																	<p>Here are the list of browser based information available. Click to get the details.</p>
+																	<p class="section-description">DataPower has SOMA enabled capabilities which have been leveraged here to extract frequently asked  information like certificates getting expired in next 14 days, list of current services in any given environment etc.</p>
+																	<p>Here are the list of browser based information available.</p>
 																</div>
 																
 																	<!-- <a href="http://dpctctst01.uhc.com:2053/getQMdetails">Get MQ Objects Details from Prod Device</a> -->
@@ -75,14 +75,14 @@
 																	<table border="1">
 																		<thead>
 																			<tr>
-																				<th>Click here for API</th>
+																				<th>Click here for result</th>
 																				<th>Description</th>
 																			</tr>
 																		</thead>
 																		<tbody>
 																			<tr>
 																				<td>
-																					<a href="http://dpctctst01.uhc.com:2053/getQMdetails">GET Cloud MQ Details</a>
+																					<a href="http://dpctctst01.uhc.com:2053/getQMdetails">Get Cloud MQ Details</a>
 																				</td>
 																				<td>
 																					<p>Get Queue Manager Objects configuration details from Cloud Production Device.</p>
@@ -90,7 +90,7 @@
 																			</tr>
 																			<tr>
 																				<td>
-																					<a href="http://dpctctst01.uhc.com:2053/getQMdetails">GET Core MQ Details</a>
+																					<a href="http://dpctctst01.uhc.com:2053/getQMdetails">Get Core MQ Details</a>
 																				</td>
 																				<td >
 																					<p>Get Queue Manager Objects configuration details from Core Production Device.</p>
@@ -98,31 +98,63 @@
 																			</tr>
 																			<tr>
 																				<td>
-																					<a href="http://dpctctst01.uhc.com:2053/getVblkStgCertDetails">GET Cloud Stage Crypto Cert Details</a>
+																					<a href="http://dpctctst01.uhc.com:2053/getVblkStg14CertDetails">Get Cloud Stage Cert expiring in next 14 Days</a>
 																				</td>
 																				<td>
-																					<p>List out all the certificates details including expiry date from Cloud Stage Device.</p>
+																					<p>List out all the certificate details which are having expiry date in next 14 days from Cloud Stage Device.</p>
 																				</td>
 																			</tr>
 																			<tr>
 																				<td>
-																					<a href="http://dpctctst01.uhc.com:2053/getQMdetails">GET Core MQ Details</a>
+																					<a href="http://dpctctst01.uhc.com:2053/getVblkStg90CertDetails">Get Cloud Stage Cert expiring in next 90 Days</a>
 																				</td>
-																				<td >
-																					<p>Get Queue Manager Objects configuration details from Core Production Device.</p>
+																				<td>
+																					<p>List out all the certificate details which are having expiry date in next 90 days from Cloud Stage Device.</p>
 																				</td>
 																			</tr>
 																			<tr>
 																				<td>
-																					<a href="http://dpelrstg01.uhc.com:2053/CoreCurrentServices">GET Prod Core List of Services </a>
+																					<a href="http://dpctctst01.uhc.com:2053/getCoreStg14CertDetails">Get Core Stage Cert expiring in next 14 Days</a>
 																				</td>
 																				<td>
-																					<p>List the name and details of Active Proxies from Core Production Device.</p>
+																					<p>List out all the certificate details which are having expiry date in next 14 days from Core Stage Device.</p>
 																				</td>
 																			</tr>
 																			<tr>
 																				<td>
-																					<a href="http://dpelrstg01.uhc.com:2053/CloudCurrentServices">GET Prod Cloud List of Services</a>
+																					<a href="http://dpctctst01.uhc.com:2053/getCoreStg90CertDetails">Get Core Stage Cert expiring in next 90 Days</a>
+																				</td>
+																				<td>
+																					<p>List out all the certificate details which are having expiry date in next 90 days from Core Stage Device.</p>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>
+																					<a href="http://dpctctst01.uhc.com:2053/getCoreProd14CertDetails">Get Core Prod Cert expiring in next 14 Days</a>
+																				</td>
+																				<td>
+																					<p>List out all the certificate details which are having expiry date in next 14 days from Core Prod Device.</p>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>
+																					<a href="http://dpctctst01.uhc.com:2053/getCoreProd90CertDetails">Get Core Prod Cert expiring in next 90 Days</a>
+																				</td>
+																				<td>
+																					<p>List out all the certificate details which are having expiry date in next 90 days from Core Prod Device.</p>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>
+																					<a href="http://dpelrstg01.uhc.com:2053/CoreCurrentServices">Get Prod Core List of Services </a>
+																				</td>
+																				<td>
+																					<p>List the name and details of active proxies from Core Production Device.</p>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>
+																					<a href="http://dpelrstg01.uhc.com:2053/CloudCurrentServices">Get Prod Cloud List of Services</a>
 																				</td>
 																				<td >
 																					<p>List the name and details of Active Proxies from Cloud Production Device.</p>
